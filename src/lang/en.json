@@ -1,0 +1,7 @@
+{
+    "pf2e-sanity": {
+        "maximum-sanity": "Maximum Sanity",
+        "maximum-sanity-hint": "The total number of sanity points each character has.",
+        "sanity": "Sanity"
+    }
+}

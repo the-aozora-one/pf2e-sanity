@@ -1,0 +1,50 @@
+{
+  "id": "pf2e-sanity",
+  "title": "PF2E Sanity",
+  "description": "Adds a sanity system for players in Pathfinder 2e.",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "Aozora",
+      "flags": {}
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "dist/lang/en.json",
+      "flags": {}
+    }
+  ],
+  "scripts": [
+    "dist/index.js"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+        "compatibility": {}
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "sanity",
+      "label": "PF2eE Sanity",
+      "path": "packs/pf2e-sanity",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ]
+}

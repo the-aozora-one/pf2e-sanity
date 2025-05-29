@@ -1,0 +1,22 @@
+{
+  "name": "sf2e-star-map",
+  "version": "1.0.0",
+  "description": "A Foundry VTT module for an interactive and customizable star map primary for use in Starfinder 2E campaigns.",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-scss": "^4.0.1",
+    "sass": "^1.89.0",
+    "sass-embedded": "^1.89.0",
+    "scss": "^0.2.4",
+    "vite": "^6.3.5"
+  }
+}
