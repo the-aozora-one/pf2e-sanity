@@ -17,6 +17,7 @@ Hooks.on('ready', () => {
         // Apply sanity damage to the token
         
         const actor = _token.actor
+        const actor = _token?.actor
         if (!actor) {
             console.debug(MODULE_ID, "|", "Actor", actor)
             // Alert the user that they need to select a token
@@ -37,6 +38,7 @@ Hooks.on('ready', () => {
             sanity: newSanityValue,
         }
         const messageContent = await renderTemplate(`modules/${MODULE_ID}/dist/templates/chat-message-sanity-damage-taken.hbs`, templateData)
+        const messageContent = await renderTemplate(`modules/${MODULE_ID}/dist/templates/chat-message/sanity-drain/damage-taken.hbs`, templateData)
 
         // Only show the sanity damage message to actor owners
         const owners = Object.keys(actor.ownership).filter((key) => {
