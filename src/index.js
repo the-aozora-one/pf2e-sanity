@@ -8,12 +8,18 @@ Hooks.on('init', () => {
 })
 
 Hooks.on('ready', () => {
+    $(document).on('click', '[data-action="sanity-heal"]', async function(event) {
+        // Heal sanity for the token
         const actor = _token?.actor
         if (!actor) {
             // Alert the user that they need to select a token
+            ui.notifications.error("Select a token first.")
             return
         }
 
+        const currentSanity = actor.getResource('sanity').value
+        if (currentSanity === 10) {
+            ui.notifications.warn("The selected token is already at maximum sanity.")
             return
         }
 
