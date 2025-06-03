@@ -17,6 +17,10 @@ Anytime that character has damage rolled against them, a button to take sanity d
 Clicking the button will deduct a single sanity point from the character.
 A message indicating the character's new sanity points will be posted to chat and will have a button to revert the damage like normal damage messages for the system.
 
+Anytime an enemy is killed, a message with a button to increase sanity will be created.
+Clicking the button will increase the character's sanity by one point up to the max.
+A message to revert the sanity healing will also be created.
+
 ## Development
 
 ```
