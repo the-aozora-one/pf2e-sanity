@@ -36,7 +36,7 @@
   "packs": [
     {
       "name": "sanity",
-      "label": "PF2eE Sanity",
+      "label": "PF2E Sanity",
       "path": "packs/pf2e-sanity",
       "type": "Item",
       "system": "pf2e",
@@ -45,6 +45,18 @@
         "TRUSTED": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "pf2e-sanity-macros",
+      "label": "PF2E Sanity Macros",
+      "path": "packs/pf2e-sanity-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
     }
   ]
 }
