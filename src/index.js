@@ -1,11 +1,6 @@
 import { MODULE_ID } from "./scripts/global"
-import { registerSettings } from "./scripts/settings"
 
 import './styles/module.scss'
-
-Hooks.on('init', () => {
-    registerSettings()
-})
 
 Hooks.on('ready', () => {
     $(document).on('click', '[data-action="sanity-heal"]', async function(event) {
